@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cetsp}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Plinio Balduino}]
   s.date = %q{2011-10-22}
-  s.description = %q{Returns data from cetsp.com.br in Ruby format}
+  s.description = %q{TODO: longer description of your gem}
   s.email = %q{pbalduino+github@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -25,8 +25,10 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "cetsp.gemspec",
     "lib/cetsp.rb",
     "spec/cetsp_spec.rb",
+    "spec/sample/empty.html",
     "spec/sample/ocorrencias.html",
     "spec/spec_helper.rb"
   ]
@@ -34,7 +36,7 @@ Gem::Specification.new do |s|
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Returns data from cetsp.com.br in Ruby format}
+  s.summary = %q{TODO: one-line summary of your gem}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
