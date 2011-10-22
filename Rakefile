@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "cetsp"
   gem.homepage = "http://github.com/pbalduino/cetsp"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Returns data from cetsp.com.br in Ruby format}
+  gem.description = %Q{Returns data from cetsp.com.br in Ruby format}
   gem.email = "pbalduino+github@gmail.com"
   gem.authors = ["Plinio Balduino"]
   # dependencies defined in Gemfile
@@ -47,3 +47,4 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
