@@ -1,0 +1,263 @@
+
+<html>
+<head>
+<META name=VI60_defaultClientScript content=VBScript>
+<title>CET - Ocorrências</title>
+
+<style type="text/css">
+<!--
+BODY
+{
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+H1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 17px;
+    COLOR: #000000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15px;
+    COLOR: #000000;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H3
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: brown;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+H4
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #0033cc;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #003366
+}
+TABLE
+{
+    BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #ffffff 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #ffffff 1px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TR
+{
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: left
+}
+.cor1 {
+	BACKGROUND-COLOR: #eaeaea
+}
+.cor2 {
+	BACKGROUND-COLOR: #dbdbdb
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Pragma" content="no-cache">
+
+
+<script language=javascript>
+
+function Abre(ordem) {  
+	if (ordem=="C") 
+	   { window.open ("ocorrencias.asp?ordem=C", "_self","");}
+	if (ordem=="H") 
+	   { window.open ("ocorrenciasH.asp?ordem=H", "_self","");} 	 
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+<style type="text/css">
+<!--
+.barra {
+	font-family: Verdana, Tahoma, Arial;
+	font-weight: normal;
+	color: #FFFFCC;
+	font-size: 10px;
+}
+-->
+</style>
+
+<script language=javascript>
+function OpenWindow( pagina, largura, altura, janela )
+{
+	window.status = "";
+
+	strFeatures = "top=100,left=200,width=" + largura + ",height=" + altura + ",toolbar=no," 
+	            + "menubar=no,location=no,directories=no,resizable=1,status=no,scrollbars=1";
+	objNewWindow = window.open(pagina ,janela , strFeatures);
+	objNewWindow.focus()
+}
+
+</script>
+
+<div id="Layer1" style="position:absolute; width:200px; height:30px; z-index:1; left:100px; top: 4px;"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/barra.gif" width="590" height="30"> 
+  <div id="hora" style="position:absolute; width:52px; height:19px; z-index:2; left: 83px; top: 9px; visibility: inherit;" class="barra"><b>11:12</b></div>
+  <!--div id="lentidao" style="position:absolute; width:52px; height:19px; z-index:2; left: 213px; top: 8px; visibility: inherit;" class="barra"><b>5879</b> km</div-->
+  <div id="lentidao" style="position:absolute; width:52px; height:19px; z-index:2; left: 210px; top: 8px; visibility: inherit;" class="barra"><b>0,7%</b></div>
+  <div id="tendencia" style="position:absolute; width:52px; height:19px; z-index:2; left: 319px; top: 10px; visibility: inherit;" class="barra"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/BAIXA.gif" alt="BAIXA"></div>
+  <div id="bTendencias" style="position:absolute; width:31px; height:23px; z-index:1; left: 401px; top: 6px; cursor:hand"><a href="javascript:OpenWindow('http://cetsp1.cetsp.com.br/monitransmapa/IMG10/eixos.asp', '790', '440','eixos')"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/bTendencia.jpg" width="27" height="21" border="0" title="Tendência por Eixo"></a></div>
+  <div id="bGraficos"   style="position:absolute; width:31px; height:23px; z-index:1; left: 434px; top: 6px; cursor:hand"><a href="javascript:OpenWindow('http://cetsp1.cetsp.com.br/monitransmapa/agora/graficolimite.asp', '760', '535', 'grafico')"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/bGraficos.jpg" width="27" height="21" border="0" title="Gráfico de Lentidão"></a></div>
+  <div id="bLentidoes"   style="position:absolute; width:31px; height:23px; z-index:1; left: 466px; top: 6px; cursor:hand"><a href="javascript:OpenWindow('http://cetsp1.cetsp.com.br/monitransmapa/IMG10/lentidao.asp', '790', '600', 'lentidao')"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/bLentidao.jpg" width="27" height="21" border="0" title="Lentidão por Corredor"></a></div>
+  <div id="bOcorrencias" style="position:absolute; width:31px; height:23px; z-index:1; left: 498px; top: 6px; cursor:hand"><a href="javascript:OpenWindow('http://cetsp1.cetsp.com.br/monitransmapa/IMG10/ocorrencias.asp', '790', '600', 'ocorrencias')"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/bOcorrencias.jpg" width="27" height="21" border="0" title="Ocorrências"></a></div>
+  
+  <div id="bAjuda"      style="position:absolute; width:31px; height:23px; z-index:1; left: 562px; top: 6px; cursor:hand"><a href="javascript:OpenWindow('http://cetsp1.cetsp.com.br/monitransmapa/agora/ajuda.htm', '790', '600', 'ajuda')"><img src="http://cetsp1.cetsp.com.br/monitransmapa/agora/img/bAjuda.jpg" width="27" height="21" border="0" title="Ajuda"></a></div>
+</div>
+
+
+<center>
+<br>  
+<br>  
+<h3>Ocorrências</h3>
+
+
+<table style="position:absolute; top:10; left:12" cellpadding=0>
+	<tr><td>Ordem:</td></tr>
+	<tr><td><input type=radio name=optOrdem value="C" style="position:relative; top:3" checked onclick="javascript:Abre('C')">Código</td></tr>
+	<tr><td><input type=radio name=optOrdem value="H" style="position:relative; top:3"  onclick="javascript:Abre('H')">Início</td></tr>
+</table>
+
+    <table> 
+      <tr>
+        <th width='3%'><b>Código</b></th>
+        <th width='47%'><b>Local</b></th>
+        <th width='20%'><b>Sentido</b></th>
+        <th width='18%'><b>Início</b></th>
+      </tr>
+   <tr class="cor1" title="Ônibus imobilizado na via">
+     <td>206&nbsp;</td>
+     <td>R TEODORO SAMPAIO X R FERNAO DIAS </td>
+     <td>UNICO&nbsp;</td>
+     <td>22/10/11-08:46&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Acidente com vítima">
+     <td>302&nbsp;</td>
+     <td>AV ENG LUIZ CARLOS BERRINI X AV DR CHUCRI ZAIDAN </td>
+     <td>BANDEIRANTES/MORUMBI&nbsp;</td>
+     <td>22/10/11-06:24&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Acidente com vítima">
+     <td>302&nbsp;</td>
+     <td>R CEL PAULO MARIANO X AV CALIM EID </td>
+     <td>CENTRO/BAIRRO&nbsp;</td>
+     <td>22/10/11-08:52&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Atropelamento">
+     <td>304&nbsp;</td>
+     <td>MARGINAL PINHEIROS CB INT EXPR X PTE ENG ARY TORRES </td>
+     <td>CASTELO/INTERLAGOS&nbsp;</td>
+     <td>22/10/11-07:39&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Atropelamento">
+     <td>304&nbsp;</td>
+     <td>AV RIO BRANCO X AV DUQ DE CAXIAS </td>
+     <td>BAIRRO/CENTRO&nbsp;</td>
+     <td>22/10/11-10:43&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Falta de energia elétrica">
+     <td>315&nbsp;</td>
+     <td>CV AYRTON SENNA 2203 </td>
+     <td>BAIRRO/CENTRO&nbsp;</td>
+     <td>22/10/11-09:24&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Queda de árvore">
+     <td>331&nbsp;</td>
+     <td>R S SEVERO 457 </td>
+     <td>BAIRRO/CENTRO&nbsp;</td>
+     <td>22/10/11-10:15&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Defeito na rede de tróleibus">
+     <td>334&nbsp;</td>
+     <td>AV CRUZEIRO DO SUL 247 </td>
+     <td>SANTANA/IPIRANGA&nbsp;</td>
+     <td>22/10/11-10:16&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Semáforo apagado">
+     <td>561&nbsp;</td>
+     <td>R JOAQUIM FLORIANO X R CLODOMIRO AMAZONAS </td>
+     <td>NAO INFORMADO&nbsp;</td>
+     <td>22/10/11-09:20&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Semáforo apagado">
+     <td>561&nbsp;</td>
+     <td>R CLODOMIRO AMAZONAS X R TABAPUA </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-09:21&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>AV CARLOS CALDEIRA FILHO X R ROGERIO DE PAULA BRITO </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-07:14&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>AV CELSO GARCIA 1572 </td>
+     <td>AMBOS&nbsp;</td>
+     <td>22/10/11-07:44&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>AV STO AMARO X R JOAQUIM GUARANI </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-07:55&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>AV STO AMARO X R ANDREA PAULINETTI </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-07:58&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>R STO AMERICO X AV GIOVANNI GRONCHI </td>
+     <td>CENTRO/BAIRRO&nbsp;</td>
+     <td>22/10/11-10:08&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>R STO AMERICO X AV GIOVANNI GRONCHI </td>
+     <td>CENTRO/BAIRRO&nbsp;</td>
+     <td>22/10/11-10:49&nbsp;</td>
+   </tr>
+   <tr class="cor1" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>R CANTAGALO X R ITAPURA </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-11:09&nbsp;</td>
+   </tr>
+   <tr class="cor2" title="Semáforo em amarelo intermitente">
+     <td>565&nbsp;</td>
+     <td>PC RAMOS DE AZEVEDO X R CONS CRISPINIANO </td>
+     <td>&nbsp;</td>
+     <td>22/10/11-11:11&nbsp;</td>
+   </tr>
+</body>
+</HTML>
